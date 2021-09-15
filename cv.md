@@ -13,6 +13,7 @@ I am Aliaksandr Svintsitski, graduated from full-time studies at the Yanka Kupal
 All my life I wonted to be a programmer.  
 The current goal is to improve my knowledge and have a good experience.
 
+
 ## Education ## 
 **Civil engineer**
 [Yanka Kupala State Universite of grodno](https://www.grsu.by/)      
@@ -28,4 +29,4 @@ The current goal is to improve my knowledge and have a good experience.
 
 * English - **A2**
 * German - **B2**
-* Russian - **native language**
+* Russian - **native language** 

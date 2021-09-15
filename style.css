@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.header-photo_download{
+    height: 150px;
+    display: flex;
+}
+ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text,.year-of-creation{
+    font-size: 20px;
+    font-family: serif;
+}
+.image-rsschool{
+    height: 50px;
+    display: flex;
+}
+
+.image-github{
+    height: 100px;
+    display: flex;
+}
