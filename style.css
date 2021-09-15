@@ -1,2 +1,13 @@
-
-
+body{
+    display: flex;
+    justify-content: center;
+}
+img{
+    height: 150px;
+    display: flex;
+    justify-content: end !important; 
+}
+ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text{
+    font-size: 20px;
+    font-family: serif;
+}
