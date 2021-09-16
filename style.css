@@ -1,10 +1,17 @@
+header{
+    display: flex;
+    position: relative;
+}
 body{
     display: flex;
     justify-content: center;
+    background-image: url(image/light-gray-background.jpg);
 }
 .header-photo_download{
-    height: 150px;
-    display: flex;
+    border: 2px solid #757575;
+    border-radius: 10px;
+    height: 300px;
+    border-radius: 5%;
 }
 ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text,.year-of-creation{
     font-size: 20px;
@@ -18,4 +25,94 @@ ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text
 .image-github{
     height: 100px;
     display: flex;
+}
+a:hover {
+    color: #ff00f2; 
+   }
+footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+   /* Всё, что ниже - это бургер меню */
+.round{
+    border-radius: 50%;
+    border: 2px solid #000000
+}
+.menu{
+    
+    width: 190px;
+    background-color: rgb(213,214,216);
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 35px;
+    top: 0;
+    right: 0;
+}
+#check-menu{
+    display: none;
+    width: 100%;
+
+}
+label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(0, 0, 0)
+}
+.second, .third{
+    top: 18px;
+}
+
+.fourth{
+    top: 28px;
+}
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+.menu-link{
+    display: block;
+    max-width: 100%;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(213,214,216);
+}
+#check-menu:checked ~ .main-menu{
+    max-height: 450px;
+    font-size: 16px;
+}
+#check-menu:checked ~ .first{
+    display: none;
+}
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+#check-menu:checked ~ .fourth{
+    display: none;
 }
