@@ -1,11 +1,16 @@
 header{
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 body{
     display: flex;
     justify-content: center;
     background-image: url(image/light-gray-background.jpg);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
 }
 .header-photo_download{
     border: 2px solid #757575;
@@ -13,6 +18,8 @@ body{
     height: 300px;
     border-radius: 5%;
 }
+
+
 ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text,.year-of-creation{
     font-size: 20px;
     font-family: serif;
@@ -29,10 +36,7 @@ ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text
 a:hover {
     color: #ff00f2; 
    }
-footer{
-    display: flex;
-    justify-content: space-evenly;
-}
+
    /* Всё, что ниже - это бургер меню */
 .round{
     border-radius: 50%;
@@ -42,7 +46,7 @@ footer{
     
     width: 190px;
     background-color: rgb(213,214,216);
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     text-align: center;
     height: 35px;
