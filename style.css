@@ -60,6 +60,7 @@ a{
 }
 .cv-section{
     display: flex;
+    border-top: 1px solid #E0E0E0;
 }
 header, main, footer{
     background-color: white;
