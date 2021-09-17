@@ -1,24 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(image/light-gray-background.jpg);
+    line-height: 1,5;
+}
 header{
     display: flex;
     position: relative;
     justify-content: space-between;
 }
-body{
-    display: flex;
-    justify-content: center;
-    background-image: url(image/light-gray-background.jpg);
-}
 footer{
+   
     display: flex;
     justify-content: space-between;
 }
+.content-left,
+.content-right{
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+.content-left {
+    width: 25%;
+}
+
+.content-right {
+    width: 75%;
+}
+.cv-section{
+    display: flex;
+}
+header, main, footer{
+    background-color: white;
+}
+
 .header-photo_download{
     border: 2px solid #757575;
     border-radius: 10px;
     height: 300px;
     border-radius: 5%;
 }
-
 
 ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text,.year-of-creation{
     font-size: 20px;
@@ -38,14 +63,10 @@ a:hover {
    }
 
    /* Всё, что ниже - это бургер меню */
-.round{
-    border-radius: 50%;
-    border: 2px solid #000000
-}
 .menu{
     
     width: 190px;
-    background-color: rgb(213,214,216);
+    background-color: rgb(255, 255, 255);
     position: relative;
     color: rgb(0, 0, 0);
     text-align: center;
