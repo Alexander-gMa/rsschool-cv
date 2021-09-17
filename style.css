@@ -20,6 +20,7 @@ footer{
 }
 a{
     text-decoration: none;
+    color: rgb(140, 140, 196);
 }
 .content-left,
 .content-right{
