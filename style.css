@@ -18,6 +18,9 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
+a{
+    text-decoration: none;
+}
 .content-left,
 .content-right{
     color: #333;
@@ -30,6 +33,25 @@ footer{
 }
 .content-left {
     width: 25%;
+}
+.skill-item{
+    display: flex;
+}
+.skill-item-name{
+    width:60%;
+    margin: 15px 0px 15px 0px;
+}
+.skill-item-name1{
+    width:60%;
+    margin: 0px 0px 15px 0px;
+}
+.circle-container{
+    width:40%;
+    margin: 15px 0px 15px 0px;
+}
+.circle-container1{
+    width:40%;
+    margin: 0px 0px 15px 0px;
 }
 
 .content-right {
@@ -47,6 +69,21 @@ h1 {
 h2{
     font-size: 25px;
 
+}
+.hljs{
+    padding: 1rem;
+}
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.circle.disable {
+    background-color: #E0E0E0;
 }
 .header-photo_download{
     border: 2px solid #757575;

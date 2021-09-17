@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>HTML, CSS & Git Basics - Svintsitski A.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body >
@@ -98,16 +101,55 @@
                     <div class="content-right">
                         <ul class = "personal-skills-text">
                             <li>Programming languages:
-                                <ul>
-                                    <li>Javascript (2/5)</li>
-                                    <li >Python (3/5) </li>
-                                
+                                <ul >
+                                    <li class="skill-item" >
+                                        <div class="skill-item-name">Javascript 
+                                        </div>
+                                        <div class="circle-container">  
+                                        <span class="circle"></span>
+                                        <span class="circle"></span>
+                                        <span class="circle disable"></span>
+                                        <span class="circle disable"></span>
+                                        <span class="circle disable"></span>
+                                        </div>
+                                    </li>
+                                    <li class="skill-item">
+                                        <div class="skill-item-name1">Python 
+                                        </div>
+                                        <div class="circle-container1">  
+                                            <span class="circle"></span>
+                                            <span class="circle"></span>
+                                            <span class="circle "></span>
+                                            <span class="circle disable"></span>
+                                            <span class="circle disable"></span>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
-                            <li>Web technologies:
+                             <li>Web technologies:
                                 <ul>
-                                    <li>HTML (2/5)</li>
-                                    <li>SCC (2/5)</li>
+                                    <li class="skill-item">
+                                        <div class="skill-item-name">HTML 
+                                        </div>
+                                        <div class="circle-container">  
+                                            <span class="circle"></span>
+                                            <span class="circle"></span>
+                                            <span class="circle disable"></span>
+                                            <span class="circle disable"></span>
+                                            <span class="circle disable"></span>
+                                        </div>
+                                    </li>
+                                    <li class="skill-item">
+                                        <div class="skill-item-name1">SCC 
+                                        </div>
+                                        <div class="circle-container1">  
+                                            <span class="circle"></span>
+                                            <span class="circle"></span>
+                                            <span class="circle disable"></span>
+                                            <span class="circle disable"></span>
+                                            <span class="circle disable"></span>
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li>Tools and programms
@@ -127,6 +169,29 @@
                         </ul>
                     </div>
                 </section> 
+                <section class="Code-Example cv-section"> 
+                    <div class="content-left">
+                        <h2 id="Employment">Code-Example</h2>
+                    </div>
+                    <div class="content-right">
+                        <pre>
+                            <code>
+                                function spy(func) {
+
+                                    function wrapper(...args) {
+                                      wrapper.calls.push(args);
+                                      return func.apply(this, arguments);
+                                    }
+                                  
+                                    wrapper.calls = [];
+                                  
+                                    return wrapper;
+                                  }
+                                  
+                            </code>
+                        </pre>
+                    </div>
+                </section>
             </main>  
 
             <footer id="links">
