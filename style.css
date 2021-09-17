@@ -3,6 +3,7 @@ body{
     justify-content: center;
     background-image: url(image/light-gray-background.jpg);
     line-height: 1,5;
+    font-family: 'Open Sans', sans-serif;
 }
 header{
     display: flex;
@@ -12,7 +13,7 @@ header{
 footer{
    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .content-left,
 .content-right{
@@ -37,7 +38,13 @@ footer{
 header, main, footer{
     background-color: white;
 }
+h1 {
+    font-size: 48px;
+}
+h2{
+    font-size: 25px;
 
+}
 .header-photo_download{
     border: 2px solid #757575;
     border-radius: 10px;
@@ -47,7 +54,9 @@ header, main, footer{
 
 ul,.personal-summary-text,.personal-education-text,.personal-workexperience-text,.year-of-creation{
     font-size: 20px;
-    font-family: serif;
+}
+.date-app{
+    font-size: 20px;
 }
 .image-rsschool{
     height: 50px;
