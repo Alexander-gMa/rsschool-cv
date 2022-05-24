@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(image/light-gray-background.jpg);
+    line-height: 1, 5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(140, 140, 196);
+}
+
+.display-none {
+    display: none;
+}
+
+.content-left,
+.content-right {
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+.skill-item {
+    display: flex;
+}
+
+.skill-item-name {
+    width: 60%;
+}
+
+.skill-item-name1 {
+    width: 60%;
+}
+
+.circle-container {
+    width: 40%;
+}
+ul{
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.circle-container1 {
+    width: 40%;
+}
+
+.content-left {
+    width: 25%;
+}
+
+.content-right {
+    width: 75%;
+}
+
+.cv-section {
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+}
+
+header,
+main,
+footer {
+    background-color: white;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 30px;
+
+}
+
+h3 {
+    font-size: 26px;
+
+}
+
+p,
+li {
+    font-size: 20px;
+}
+
+.hljs {
+    padding: 1rem;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.circle.disable {
+    background-color: #E0E0E0;
+}
+
+.header-photo_download {
+    border: 2px solid #757575;
+    border-radius: 10px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.date-app {
+    font-size: 20px;
+}
+
+.image-rsschool {
+    height: 50px;
+    display: flex;
+}
+
+.image-github {
+    height: 100px;
+    display: flex;
+}
+
+a:hover {
+    color: #ff00f2;
+}
+
+/* Всё, что ниже - это бургер меню */
+.menu {
+
+    width: 230px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 35px;
+    top: 0;
+    right: 0;
+}
+
+#check-menu {
+    display: none;
+    width: 100%;
+
+}
+
+label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: rgb(0, 0, 0)
+}
+
+.second,
+.third {
+    top: 18px;
+}
+
+.fourth {
+    top: 28px;
+}
+
+.main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.menu-link {
+    display: block;
+    max-width: 100%;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: rgb(213, 214, 216);
+    font-size: 20px;
+}
+
+#check-menu:checked~.main-menu {
+    max-height: 450px;
+    font-size: 16px;
+}
+
+#check-menu:checked~.first {
+    display: none;
+}
+
+#check-menu:checked~.second {
+    transform: rotate(45deg);
+}
+
+#check-menu:checked~.third {
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked~.fourth {
+    display: none;
+}
+
+.projects-container {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.christmas-task,
+.momentum,
+.project-management,
+.rslang {
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    width: 21em;
+    height: 170px;
+    transition: 1s;
+}
+
+.christmas-task {
+    background: url(https://user-images.githubusercontent.com/82538974/170081738-b3f3a15e-b4f8-4bfc-a97b-8569f3c030b7.png);
+}
+
+.christmas-task:hover,
+.momentum:hover,
+.project-management:hover,
+.rslang:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+}
+
+.momentum {
+    background: url(https://user-images.githubusercontent.com/82538974/170084765-36f35f33-9551-43b9-befc-afb2c18728f7.png);
+}
+
+.project-management {
+    background: url(https://user-images.githubusercontent.com/82538974/170089378-5778aa96-900f-4861-844f-aa4ab3a1c800.png);
+}
+
+.rslang {
+    background: url(https://user-images.githubusercontent.com/82538974/170090026-f3c0524a-6fb9-46f2-b916-c33b84338abb.png);
+}
+
+.projects-container.second{
+    padding-bottom: 20px;
+}
